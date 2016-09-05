@@ -89,7 +89,7 @@
 <body>
 <div id="header-div">
 	<div id="logo-div" style="bgcolor:#000000;">
-		<img src="application/views/admin/images/ecshop_logo.gif" alt="ECSHOP - power for e-commerce" />
+		<img src="<?=_PUBLIC?>/admin/images/ecshop_logo.gif" alt="ECSHOP - power for e-commerce" />
 	</div>
 	<div id="license-div" style="bgcolor:#000000;"></div>
 	<div id="submenu-div">

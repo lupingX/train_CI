@@ -13,7 +13,7 @@ body {
 
 </head>
 <body style="background: #278296">
-<form method="post" action="index.php?p=admin&c=Login&a=signin" name='theForm'>
+<form method="post" action="<?=site_url('admin/loginc/signin')?>" name='theForm'>
   <table cellspacing="0" cellpadding="0" style="margin-top: 100px" align="center">
   <tr>
     <td><img src="<?=_PUBLIC?>/admin/images/login.png" width="178" height="256" border="0" alt="ECSHOP" /></td>
@@ -30,9 +30,13 @@ body {
       <tr>
         <td>验证码：</td>
         <td><input type="text" name="captcha" class="capital" /></td>
+        <span><?php if ($error_message) echo $error_message;
+        
+        ?></span>
       </tr>
       <tr>
-      <td colspan="2" align="right"><img src="index.php?p=admin&c=Login&a=captcha" width="145" height="40" alt="CAPTCHA" border="1" onclick= this.src="index.php?p=admin&c=Login&a=captcha&"+Math.random() style="cursor: pointer;" title="看不清？点击更换另一个验证码。" />
+      <td colspan="2" align="right"><img src="<?= site_url('admin/loginc/captcha') ?>" width="145" height="40" alt="CAPTCHA" border="1" 
+      onclick= this.src="<?= site_url('admin/loginc/captcha').'/' ?>"+Math.random() style="cursor: pointer;" title="看不清？点击更换另一个验证码。" />
       </td>
       </tr>
       <tr><td colspan="2"><input type="checkbox" value="1" name="remember" id="remember" /><label for="remember">请保存我这次的登录信息</label></td></tr>
