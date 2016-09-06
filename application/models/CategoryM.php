@@ -19,4 +19,20 @@ class CategoryM extends CI_Model{
 		}
 		return $res;
 	}
+
+	public function insert($data){
+		return $this->db->insert('cz_category', $data);
+	}
+
+	public function delete($cat_id){
+		return $this->db->delete('cz_category', array('cat_id' => $cat_id));
+	}
+	public function getOne($cat_id){
+		return $this->db->get_where('cz_category', array('cat_id' =>$cat_id))->result_array();
+	}
+	public function update($cat_id,$data){
+		$this->db->where('cat_id', $cat_id);
+		return $this->db->update('cz_category', $data);
+	}
+
 }

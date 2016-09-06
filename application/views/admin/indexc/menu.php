@@ -46,11 +46,11 @@
 				<li class="explode" key="02_cat_and_goods" name="menu"> 商品管理        
 					<ul>
 						 
-						  <li class="menu-item"><a href="<?=site_url('admin/CategoryC/list')?>" target="main-frame">商品分类</a></li>
-						  <li class="menu-item"><a href="<?=site_url('admin/CategoryC/list')?>" target="main-frame">商品品牌</a></li>
-						  <li class="menu-item"><a href="<?=site_url('admin/CategoryC/list')?>" target="main-frame">商品类型</a></li>				
-						  <li class="menu-item"><a href="<?=site_url('admin/CategoryC/add')?>" target="main-frame">添加新商品</a></li>
-						  <li class="menu-item"><a href="<?=site_url('admin/CategoryC/list')?>" target="main-frame">商品列表</a></li>
+						  <li class="menu-item"><a href="<?=site_url('admin/CategoryC/lista')?>" target="main-frame">商品分类</a></li>
+						  <li class="menu-item"><a href="<?=site_url('admin/CategoryC/lista')?>" target="main-frame">商品品牌</a></li>
+						  <li class="menu-item"><a href="<?=site_url('admin/CategoryC/lista')?>" target="main-frame">商品类型</a></li>				
+						  <li class="menu-item"><a href="<?=site_url('admin/CategoryC/adda')?>" target="main-frame">添加新商品</a></li>
+						  <li class="menu-item"><a href="<?=site_url('admin/CategoryC/lista')?>" target="main-frame">商品列表</a></li>
 					</ul>
 				</li>
 

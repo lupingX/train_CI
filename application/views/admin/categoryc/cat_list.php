@@ -46,9 +46,9 @@
 					<td width="10%" align="right"><span onclick="listTable.edit(this, 'edit_sort_order', 1)" title="点击修改内容" style=""><?php  echo $cat['sort_order'] ; ?></span></td>
 					<td width="24%" align="center">
 						<!-- <a href="category.php?act=move&amp;cat_id=1">转移商品</a> | -->
-            <?=site_url('admin/categoryc/edita/'.$cat['cat_id'])?>
-						<a href="<?=site_url('admin/categoryc/edita/'.$cat['cat_id'])?>">编辑</a> |
-						<a href="<?=site_url('admin/categoryc/edita/'.$cat['cat_id'])?>">移除</a>
+           <!--  <?=site_url('admin/categoryc/edita/'.$cat['cat_id'])?> -->
+						<a href="<?=site_url('admin/categoryc/editA/'.$cat['cat_id'])?>">编辑</a> |
+						<a href="<?=site_url('admin/categoryc/deleteA/'.$cat['cat_id'])?>">移除</a>
 					</td>
 				</tr>
       <?php  endforeach; ?>
@@ -60,14 +60,11 @@
 </div>
 </form>
 
-  </table>
-</div>
-</form>
 
 
 <div id="footer">
-	FOR PRACTICE -  </div>
-</div>
+	FOR PRACTICE33 -  </div>
+
  <script>
 	/**
  * 折叠分类列表

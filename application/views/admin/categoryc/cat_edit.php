@@ -4,24 +4,24 @@
 <title>SHOP 管理中心 - 添加分类 </title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="application/views/admin/styles/general.css" rel="stylesheet" type="text/css" />
-<link href="application/views/admin/styles/main.css" rel="stylesheet" type="text/css" />
+<link href="<?=_PUBLIC?>/admin/styles/general.css" rel="stylesheet" type="text/css" />
+<link href="<?=_PUBLIC?>/admin/styles/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
 <h1>
-<span class="action-span"><a href="index.php?p=admin&c=category&a=index">商品分类</a></span>
-<span class="action-span1"><a href="index.php?act=main">SHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 添加分类 </span>
+<span class="action-span"><a href="<?=site_url('admin/categoryc/listA')?>">商品分类</a></span>
+<span class="action-span1"><a href="<?=site_url('admin/indexc/index')?>">SHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 添加分类 </span>
 <div style="clear:both"></div>
 </h1>
 <!-- start add new category form -->
 <div class="main-div">
-  <form action="index.php?p=admin&c=Category&a=update" method="post" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
+  <form action="<?=site_url('admin/categoryc/updateA/'.$cat['cat_id'])?>" method="post" name="theForm" enctype="multipart/form-data" >
 	 <table width="100%" id="general-table">
 		<tbody>
 			<tr>
 				<td class="label">分类名称:</td>
-				<td><input type="text" name="cat_name" maxlength="20" value="<?php echo $cat['cat_name'] ;?>" size="27"> <font color="red">*</font></td>
+				<td><input type="text" name="cat_name" maxlength="20" value="<?=$cat['cat_name']?>" size="27"> <font color="red">*</font></td>
 			</tr>
 			<tr>
 				<td class="label">上级分类:</td>

@@ -47,7 +47,7 @@
 <div id="footer">
 	FOR PRACTICE -  - 
 </div>
-</div>
+
 
 </body>
 </html>

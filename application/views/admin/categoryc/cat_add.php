@@ -10,13 +10,13 @@
 <body>
 
 <h1>
-<span class="action-span"><a href="">商品分类</a></span>
-<span class="action-span1"><a href="">SHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 添加分类 </span>
+<span class="action-span"><a href="<?=site_url('admin/categoryc/lista')?>">商品分类</a></span>
+<span class="action-span1"><a href="<?=site_url('admin/indexc/index')?>">SHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 添加分类 </span>
 <div style="clear:both"></div>
 </h1>
 <!-- start add new category form -->
 <div class="main-div">
-  <form action="" method="post" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
+  <form action="<?=site_url('admin/categoryc/insert')?>" method="post" name="theForm" enctype="multipart/form-data" >
 	 <table width="100%" id="general-table">
 		<tbody>
 			<tr>
@@ -66,10 +66,10 @@
 
 
 <div id="footer">
-	FOR PRACTICE - 
+	FOR PRACTICE111- 
 </div>
 
-</div>
+
 
 </body>
 </html>
